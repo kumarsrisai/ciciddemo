@@ -33,7 +33,7 @@ jobs:
         run: echo "Images Pueshed to Docker Hub"
 
       - name: Deploy to Ec2 via SSH
-        uses: ubuntu/ssh-action@v1.0.0
+        uses: appleboy/ssh-action@v1.0.0
         with: 
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
